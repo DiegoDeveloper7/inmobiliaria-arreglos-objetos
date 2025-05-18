@@ -1,5 +1,5 @@
 
-const departamentos = [
+const departamentosVenta = [
  
     // 1ra tarjeta - index  
 
@@ -92,7 +92,7 @@ const departamentos = [
   // Limpia el contenedor (menos la plantilla)
   contenedor.innerHTML = '';
   
-  departamentos.forEach(depto => {
+  departamentosVenta.forEach(depto => {
     const tarjetaClon = plantilla.cloneNode(true);
   
     tarjetaClon.querySelector('#img').src = depto.src;
@@ -127,3 +127,7 @@ if (depto.pets) {
     contenedor.appendChild(tarjetaClon);
 
   });
+
+
+
+  

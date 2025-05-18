@@ -4,10 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROPIEDADES ARQUILER</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"/>
 </head>
+
 <body>
 
-    <h1>PROPIEDADES ARQUILER</h1>
+    <main class="container-fluid main-section"><h1 class="text-white">PROPIEDADES EN ARQUILER DISPONIBLES</h1> </main>
+    
+      <div class="container mt-5">
+    
+        <section id="arquiler">
 
-</body>
+            <h2 class="tituloVenta">Todas Las Propiedades en Arquiler</h2>
+      
+          <div class="row"  id="contenedor-tarjetasA">
+      
+      
+                  <!-- Esta tarjeta será usada como plantilla -->
+              <div class="col-md-4 mb-4 tarjetaA ">
+                <div class="card">
+                <img id="img" src="" class="card-img-top" alt="Imagen del departamento"/>
+                <div class="card-body">
+                <h5 id="titulo" class="card-title"></h5>
+                <p id="descripcion" class="card-text"></p>
+                <p id="ubicacion"><i class="fas fa-map-marker-alt"></i></p>
+                <p id="habs-banos">
+                <i class="fas fa-bed"></i> 
+                <i class="fas fa-bath"></i> 
+                </p>
+                <p id="precio"><i class="fas fa-dollar-sign"></i></p>
+    
+                <p id="smoke" class="text-danger">
+                <i class="fas fa-smoking-ban"></i> 
+                </p>
+    
+                <p id="pets" class="text-danger">
+                 <i class="fa-solid fa-ban"></i> 
+                </p>
+    
+                 </div>
+                </div>
+              </div>
+    
+          </div>
+    
+               <a href="index.html"  class="btn btn-dark">Volver a la Pagina principal</a>
+      
+          </section>
+    
+        </div>
+    
+    
+           <!-- Font awesome -->
+           <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+    
+            <!-- Bootstrap JS -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+          <script src="./assets/js/propiedadesArquiler.js"></script>
+    
+    </body>
 </html>
