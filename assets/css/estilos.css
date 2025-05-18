@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: red;
     text-align: center;
 }
 
@@ -16,4 +16,11 @@
 
 .card img{
     height: 250px;
+}
+
+.tituloVenta {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: green;
 }
