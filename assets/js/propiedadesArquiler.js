@@ -94,6 +94,8 @@ const departamentosArquiler = [
 ]
 
 
+export function propiedadesEnArquiler () {
+
 const contenedor2 = document.getElementById('contenedor-tarjetasA');
 const plantilla2 = document.querySelector('.tarjetaA');
 
@@ -138,3 +140,6 @@ console.log(tarjetaClon2)
   contenedor2.appendChild(tarjetaClon2);
 
 }); 
+
+};
+
