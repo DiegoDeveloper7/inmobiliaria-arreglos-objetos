@@ -39,7 +39,49 @@ const departamentosVenta = [
         costo: 4500,
         smoke: false,
         pets: true
-      }
+      },
+
+      // 4ta tarjeta - out index 
+
+      {
+        src: './assets/imgs/casa1.jpg',
+        nombre: 'Casa en Vitacura',
+        descripcion: 'Una incrible casa familiar en un sector privilegiado de la ciudad de Santigao.',
+        ubicacion: 'Avenida vitacura, Oriente 406',
+        habitaciones: '5 Habitaciones |',
+        baños: '4 Baños',
+        costo: 1000000,
+        smoke: true,
+        pets: true
+      },
+
+      // 5ta tarjeta - out index 
+
+      {
+        src: './assets/imgs/depa2.webp',
+        nombre: 'Departamento Las Condes',
+        descripcion: 'Gran departamento en reconcido sector de Las Condes.',
+        ubicacion: 'Avenida Padre Hurtado, Oriente 408',
+        habitaciones: '3 Habitaciones |',
+        baños: '2 Baños',
+        costo: 400000,
+        smoke: false,
+        pets: true
+      },
+
+      // 6ta tarjeta - out index 
+
+      {
+        src: './assets/imgs/depa3.jpeg',
+        nombre: 'Departamento Viña del Mar',
+        descripcion: 'Excelente departamento en la Ciudad de Viña del Mar y sus Gaviotas.',
+        ubicacion: 'Avenida del Deporte, Playa acapulco 407',
+        habitaciones: '3 Habitaciones |',
+        baños: '2 Baños',
+        costo: 350000,
+        smoke: true,
+        pets: false
+        },
     ];
 
     const contenedor = document.getElementById('contenedor-tarjetas');
@@ -48,7 +90,7 @@ const departamentosVenta = [
   // Limpia el contenedor (menos la plantilla)
   contenedor.innerHTML = '';
   
-  departamentosVenta.forEach(depto => {
+  departamentosVenta.slice(0,3).forEach(depto => {
     const tarjetaClon = plantilla.cloneNode(true);
   
     tarjetaClon.querySelector('#img').src = depto.src;
@@ -57,8 +99,6 @@ const departamentosVenta = [
     tarjetaClon.querySelector('#ubicacion').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${depto.ubicacion}`;
     tarjetaClon.querySelector('#habs-banos').innerHTML = `<i class="fas fa-bed"></i> ${depto.habitaciones} <i class="fas fa-bath"></i> ${depto.baños}`;
     tarjetaClon.querySelector('#precio').innerHTML = `<i class="fas fa-dollar-sign"></i> ${depto.costo.toLocaleString('es-CL')}`;
-    //tarjetaClon.querySelector('#smoke').style.display = depto.smoke ? 'none' : 'block';
-    //tarjetaClon.querySelector('#pets').style.display = depto.pets ? 'none' : 'block';
 
     // Para "smoke"
 const smokeP = tarjetaClon.querySelector('#smoke');
@@ -132,7 +172,52 @@ if (depto.pets) {
     costo:  2200,
     smoke: false,
     pets: false
-  }
+  },
+
+   // 4ta tarjeta - index  
+
+   {
+    src: './assets/imgs/depA1.jpg',
+    nombre: 'Departamento en La Serena',
+    descripcion: 'Hermoso departamento de Verano con piscina, muy cerca del Playa el Faro.',
+    ubicacion: 'Avenida del Mar, La serena 406',
+    habitaciones: '4',
+    baños: '2',
+    costo: 800,
+    smoke: false,
+    pets: true
+  },
+
+
+  // 5ta tarjeta - index  
+
+{
+  src: './assets/imgs/depA2.jpg',
+  nombre: 'Departamento en Valdivia',
+  descripcion: 'Gran departamento en la ciudad de Valdivia, con vista la bosque.',
+  ubicacion: 'Avenida Valdivia, 407 norte',
+  habitaciones: '3',
+  baños: '1',
+  costo: 700,
+  smoke: false,
+  pets: true
+},
+
+
+  // 6ta tarjeta - index  
+
+  {
+    src: './assets/imgs/depA3.jpg',
+    nombre: 'Departamento en Berlin',
+    descripcion: 'Exquisito departamento con la mejor vista a todo la ciudad de Berlin.',
+    ubicacion: 'Ciudad de Belrin, Alemania 408',
+    habitaciones: '7',
+    baños: '3',
+    costo: 5000,
+    smoke: true,
+    pets: false
+  },
+
 ];
 
 const contenedor2 = document.getElementById('contenedor-tarjetasA');
@@ -142,7 +227,7 @@ const plantilla2 = document.querySelector('.tarjetaA');
  contenedor2.innerHTML = '';
 
 
- departamentosArquiler.forEach(depto => {
+ departamentosArquiler.slice(0,3).forEach(depto => {
   const tarjetaClon2 = plantilla2.cloneNode(true);
 
 

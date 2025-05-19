@@ -85,6 +85,8 @@ const departamentosVenta = [
         },
 
   ];
+
+  export function propiedadesEnVenta () {
   
   const contenedor = document.getElementById('contenedor-tarjetas');
   const plantilla = document.querySelector('.tarjeta');
@@ -101,8 +103,7 @@ const departamentosVenta = [
     tarjetaClon.querySelector('#ubicacion').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${depto.ubicacion}`;
     tarjetaClon.querySelector('#habs-banos').innerHTML = `<i class="fas fa-bed"></i> ${depto.habitaciones} <i class="fas fa-bath"></i> ${depto.baños}`;
     tarjetaClon.querySelector('#precio').innerHTML = `<i class="fas fa-dollar-sign"></i> ${depto.costo.toLocaleString('es-CL')}`;
-    //tarjetaClon.querySelector('#smoke').style.display = depto.smoke ? 'none' : 'block';
-    //tarjetaClon.querySelector('#pets').style.display = depto.pets ? 'none' : 'block';
+  
 
     // Para "smoke"
 const smokeP = tarjetaClon.querySelector('#smoke');
@@ -128,6 +129,6 @@ if (depto.pets) {
 
   });
 
-
+  }
 
   
