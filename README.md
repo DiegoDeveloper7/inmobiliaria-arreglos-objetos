@@ -1,6 +1,6 @@
 Cuarta Entrega de curso JS. 
 
-Cuarto Desafio Funciones
+Cuarto Desafio Arrerglos y Objetos
 
 Considerar que los archivos propiedadesVenta.html y propiedadesArquiler.html estan usando modulos en la etiqueta script, 
 por lo cual debe ser ejecutados desde un servidor para funcionar, sin ser bloqueados por el navegador. No asi el index.html 
