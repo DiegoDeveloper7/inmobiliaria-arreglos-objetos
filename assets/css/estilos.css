@@ -5,8 +5,8 @@
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: red;
+    justify-content: flex-start;
+    color:blue;
     text-align: center;
 }
 
